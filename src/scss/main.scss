@@ -1,0 +1,108 @@
+/* 
+==============================================
+CONTENT:	Project Name Here
+AUTHOR:		Your Name Here
+==============================================
+
+TABLE OF CONTENTS:
+
+0. Reset
+1. Main Layout
+2. Content
+
+==============================================
+*/
+
+/* 0. Reset ================================= */
+@import 'reset';
+
+
+/* 1. Main Layout ================================= */
+
+* {
+	box-sizing: border-box;
+}
+
+body {
+	background: white;
+	font-family: sans-serif;
+}
+
+
+
+
+/* 2. Content ================================= */
+
+header {
+	width: 100%;
+	margin: 0 auto;
+	padding: 0 0 20px 0;
+	text-align: center;
+	background: white;
+
+	img {
+		width: 150px;
+		margin: 30px 0 0 0;
+	}
+
+	h1 {
+		margin: 20px 0;
+		line-height: 140%;
+		font-size: 24pt;
+	}
+
+	ul {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-evenly;
+		li {
+			a {
+				text-decoration: none;
+				color: red;
+				&:hover {
+					text-decoration: underline;
+					color: darken(red, 20%);
+				}
+			}
+		}
+	}
+
+	
+}
+
+body.sticky_nav {
+	margin-top: 200px;
+	header {
+		position: fixed;
+		display: flex;
+		flex-direction: row;
+		top: 0;
+	
+		img {
+			margin: 10px;
+			width: 45px;
+			height: 45px;
+		}
+		
+		h1 {
+			margin: 10px;
+		}
+		
+		ul {
+			flex-grow: 1;
+			margin: 25px 0;
+		}
+	}
+}
+
+.content {
+	width: 100%;
+	margin: 0 auto;
+	padding: 0 30px;
+	
+
+	p {
+		margin: 20px 0;
+		line-height: 140%;
+	}
+}
