@@ -74,23 +74,10 @@ body.sticky_nav {
 	margin-top: 200px;
 	header {
 		position: fixed;
-		display: flex;
-		flex-direction: row;
 		top: 0;
 	
 		img {
-			margin: 10px;
 			width: 45px;
-			height: 45px;
-		}
-		
-		h1 {
-			margin: 10px;
-		}
-		
-		ul {
-			flex-grow: 1;
-			margin: 25px 0;
 		}
 	}
 }
